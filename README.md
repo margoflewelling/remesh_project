@@ -1,24 +1,26 @@
-# README
+###Description
+  Very simplified Remesh application. Conversations have different message threads with commented thoughts.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### SetUp
+App uses Ruby 2.5.3 & Rails 6.0.3
 
-* Ruby version
+1. Clone the repo
+```sh
+git clone git@github.com:margoflewelling/remesh_mf.git
+```
+2. Open the CLI
+  - CD into the repository ```cd remesh_mf```
+  - Run ```bundle install``` to have all gems needed
+  - Run ```rails db:create && db:migrate && db:seed```
 
-* System dependencies
+3. On the CLI open your local host
+  - ```rails s```
+  - Navigate to localhost:3000
 
-* Configuration
+### Testing
+ - Run ```bundle exec rspec```
+ - Should have 17 passing tests
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Additional Thoughts
+ - Fun little project, hard to know when to stop working. Main things to continue working on would be LOTS of styling and it would be cool to have the search functionality be dynamic when typing.
