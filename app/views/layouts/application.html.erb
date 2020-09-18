@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <nav class = "topnav">
+      <%= link_to "All Conversations", "/"%>
+    </nav>
+
+    <% flash.each do |type, message| %>
+      <div class= "<%=type%>-flash">
+      <p><%= message %></p>
+      </div>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,12 @@
+<h1> All Conversations </h1>
+
+
+<% @conversations.each do |conversation| %>
+<ul>
+  <li> <%= link_to "#{conversation.title}", "/conversations/#{conversation.id}" %> </li>
+</ul>
+<% end %>
+
+<div class="button">
+<%= link_to "Create New Conversation", "/conversations/new" %>
+</div>
