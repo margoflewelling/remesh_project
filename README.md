@@ -11,7 +11,7 @@ App uses Ruby 2.5.3 & Rails 6.0.3
 git@github.com:margoflewelling/remesh_project.git
 ```
 2. From your cli
-  - CD into the repository ```cd remesh_mf```
+  - CD into the repository ```cd remesh_project/```
   - Run ```bundle install``` to get all gems needed
   - Run ```rails db:create && db:migrate && db:seed``` to set up the database
 
