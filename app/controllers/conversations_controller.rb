@@ -22,4 +22,10 @@ class ConversationsController < ApplicationController
     @conversation = Conversation.find(params[:id])
   end
 
+  def search
+    query = "%#{params[:search]}%"
+    @conversations = Conversation.where("title ILIKE ?", query)
+    render :index
+  end
+  
 end

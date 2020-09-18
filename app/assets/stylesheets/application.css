@@ -17,12 +17,12 @@
 
  .topnav {
    overflow: hidden;
-   background-color: #002244;
+   background-color: lightblue;
  }
 
  .topnav a {
    float: left;
-   color: #f2f2f2;
+   color: white;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
@@ -42,18 +42,26 @@
 }
 
 .button {
-  background-color: #EEEEEE;
-  color: #333333;
+  background-color: lightblue;
   padding: 2px 6px 2px 6px;
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
-  width: 80px;
+  width: 150px;
+}
+
+a, a:visited {
+   color:black;
+  }
+
+a:hover {
+  color: purple;
 }
 
 .button a {
   font: bold 11px;
+  text-decoration-color: black;
   text-decoration: none;
 }
 

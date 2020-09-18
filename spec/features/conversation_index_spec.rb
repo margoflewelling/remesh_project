@@ -40,4 +40,13 @@ RSpec.describe "Conversation Index Page", type: :feature do
     expect(current_path).to eq("/conversations/#{@conversation1.id}")
   end
 
+  it "can search for conversations" do
+    visit "/conversations"
+    within ".search" do
+      fill_in(:search, with: "cream")
+      click_button("Search")
+      expect(page).to_not have_content("Dogs")
+    end
+  end
+
 end

@@ -1,5 +1,13 @@
 <h1> All Conversations </h1>
 
+<h4>Search by Conversation Title:</h4>
+
+<div class="search">
+<%= form_tag("/conversations/search", :method => :get) do %>
+  <%= text_field_tag(:search, params[:search]) %>
+  <%= submit_tag ("Search") %>
+<% end %>
+</div>
 
 <% @conversations.each do |conversation| %>
 <ul id="conversations">
