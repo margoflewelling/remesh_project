@@ -2,7 +2,7 @@
 
 
 <% @conversations.each do |conversation| %>
-<ul>
+<ul id="conversations">
   <li> <%= link_to "#{conversation.title}", "/conversations/#{conversation.id}" %> </li>
 </ul>
 <% end %>

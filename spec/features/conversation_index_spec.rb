@@ -34,4 +34,10 @@ RSpec.describe "Conversation Index Page", type: :feature do
     expect(page).to have_content("Title can't be blank")
   end
 
+  it "can click to conversation show page" do
+    visit "/conversations"
+    click_link("Dogs")
+    expect(current_path).to eq("/conversations/#{@conversation1.id}")
+  end
+
 end

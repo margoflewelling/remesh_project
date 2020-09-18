@@ -1,0 +1,27 @@
+<h1> <%= @message.conversation.title %> </h1>
+<% @message.conversation.messages.each do |message| %>
+  <div id=message-<%=message.id%>>
+  <h3><%= message.text %> </h3>
+  <h5> Thoughts: </h5>
+    <ul>
+      <% message.thoughts.each do |thought| %>
+        <li id=thought-<%=thought.id%>> <%= thought.text %> </li>
+      <% end %>
+    </ul>
+    <% if message == @message %>
+        <h4>Add a New Thought:</h4>
+          <%= form_tag("/conversations/#{@message.conversation.id}/messages/#{@message.id}/thoughts", method: :post) do %>
+            <%= label_tag :text %>
+            <%= text_field_tag :text %>
+
+            <%= button_tag 'Add Thought' %>
+        <% end %>
+    <% end %>
+
+</div>
+<% end %>
+
+<br />
+<div class="button">
+<%=link_to "New Message", "/conversations/#{@message.conversation.id}/messages/new" %>
+</div>

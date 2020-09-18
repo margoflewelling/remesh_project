@@ -1,0 +1,9 @@
+<%= render "shared/conversation_show" %>
+
+<h1>Add a New Message:</h1>
+  <%= form_tag("/conversations/#{@conversation.id}/messages", method: :post) do %>
+    <%= label_tag :text %>
+    <%= text_field_tag :text %>
+
+    <%= button_tag 'Add Message' %>
+<% end %>
