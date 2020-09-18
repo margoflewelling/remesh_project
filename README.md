@@ -8,7 +8,7 @@ App uses Ruby 2.5.3 & Rails 6.0.3
 
 1. Clone the repo
 ```sh
-git clone git@github.com:margoflewelling/remesh_mf.git
+git@github.com:margoflewelling/remesh_project.git
 ```
 2. From your cli
   - CD into the repository ```cd remesh_mf```
