@@ -29,6 +29,12 @@
    font-size: 17px;
  }
 
+.search {
+  float: right;
+  position: relative;
+  top: -80px;
+  padding-right: 50px;
+}
  .success-flash {
   padding: 10px;
   background-color: #4b98e4;
